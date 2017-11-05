@@ -1,0 +1,168 @@
+Section 1:
+===========
+1:Introduction to Cloud Computing
+2:Cloud Computing Models
+3:Architecture of Cloud Environment
+4:Characteristic of CSP - Elasticity
+5:Characteristic of CSP - Elasticity 02
+
+Section 2:
+===========
+6:Introduction to Amazon Web Services
+7:AWS Global Infrastructure
+8:Setting up LAB environment
+9:Introduction to Network Switches
+10:Introduction to Virtual Private Cloud
+11:VPC - Part 2 ( Routing )
+12:Launching our first EC2 instance.
+13:Network Switches &amp; VPC - Routing Functionality
+14:VPC &amp; Subnetworks - Part 01
+15:Internet Gateways
+16:Public &amp; Private Subnets
+17:Public &amp; Private Subnets - Practical
+18:IP Addressing in AWS
+19:Deploying full VPC based EC2 Infrastructure
+20:VPC Peering
+21:EC2 Placement Groups
+22:Understanding basics of Firewalls
+23:Understanding AWS Firewall - Security Groups
+
+Section 3:
+===========
+24:Introduction to Block &amp; Object storage mechanism
+25:Introduction to Elastic Block Store
+26:Feature of EBS - Portability
+27:Feature of EBS - Elasticity
+28:Understanding Virtualization Snapshots
+29:EBS - Volume Types
+30:Instance Store Volumes
+31:Introduction to Simple Storage Service (S3)
+32:Features of S3 - Storage Classes
+33:Features of S3 - Version Control
+34:Feature of S3 - Lifecycle Management
+35:Features of S3 - Cross Region Replication
+
+Section 4:
+===========
+36:Understanding High Availability Configuration
+37:RTO &amp; RPO
+38:Getting started with Elastic Load Balancers
+39:ELB Configuration - Health Checks
+40:Configuring our first ELB
+41:ELB - Nodes &amp; Availability Zones
+42:ELB Configuration - Cross Zone Load Balancing
+
+Section 5:
+===========
+43:Scaling to traffic patterns
+44:Introduction to Auto Scaling
+45:Auto Scaling - Practical
+46:Auto Scaling - Scaling Up Operations
+47:Auto Scaling - Scaling Down Operations
+48:Auto Scaling Plans
+
+Section 6:
+===========
+49:Understanding the principle of least privilage
+50:POLP  - It starts with ROOT
+51:Introduction to Identity &amp; Access Management (IAM)
+52:Understanding the IAM Policies
+53:IAM Policies - Part 02
+54:IAM Policy Evaluation Logic
+55:Getting started with Inline Policies
+56:AWS CLI
+57:IAM Role
+58:EC2 Instance Metadata
+59:IAM Best Practice - Users and Groups
+60:IAM - Credential Reports
+61:Understanding working of an IAM role
+62:AWS STS
+
+Section 7:
+===========
+63:Introduction to Cryptography
+64:Understanding communication Protocols
+65:Plain Text vs Encrypted Protocols
+66:Challenge with storing encryption keys &amp; Intro to CloudHSM
+67:Understanding the Disk Level encryption schemas
+
+Section 8:
+===========
+68:Introduction to Serverless Computing
+69:Getting started with AWS Lambda
+70:Introduction to API
+71:Understanding working of API
+72:Building the function for our API
+73:Building our API with API Gateway
+
+Section 9:
+===========
+74:Introduction to Relational Databases
+75:Installing an RDMS system in an EC2 instance
+76:Creating our first database structure in MySQL
+77:Understanding the INSERT statements
+78:Primary Key &amp; Null Values
+79:Getting started with AWS RDS
+80:Understanding the Parameter &amp; Subnet Groups in RDS
+81:Connect to RDS via CLI and MySQL Workbench
+82:Creating our first blog and connect it with RDS
+83:Exploring the Wordpress database structure in RDS
+84:Implementing Read replicas - Part 01
+85:Implementing Read replicas - Part 02
+86:Understanding RDS Snapshots
+87:Multi-AZ Architecture for RDS
+88:Understanding NoSQL Database
+89:Getting started with DynamoDB
+90:DynamoDB queries with CLI
+91:DynamoDB - Consistency Models
+92:Real World Use Case for NoSQL Database
+93:DynamoDB - Read &amp; Write Capacity Units
+
+Section 10:
+===========
+94:Introduction to Message Brokers
+95:Message Broker - Practical
+96:Introduction to SQS
+97:SQS - Understanding "Visibility Timeout" parameter
+98:SQS - Understanding different polling methods
+99:SQS - Understanding different queue types
+
+Section 11:
+===========
+100:Introduction to DNS
+101:Traffic packet capture of DNS packets
+102:Understanding DNS Records
+103:DNS Records - A &amp; AAAA
+104:Introduction to Route53
+105:Integrating Route53 with VPC
+106:DNS Records - CNAME &amp; Alias
+107:DNS Records - Mail Exchange
+108:DNS Records - TXT records
+
+Section 12:
+===========
+109:Understanding Streaming Data
+110:Configuring our first streams in AWS Kinesis
+111:AWS Kinesis - Practical
+112:AWS Import / Export
+113:Importing OVF to EC2
+
+Section 13:
+===========
+114:Introduction to Infrastructure as a Code
+115:Understanding CloudFormation
+116:AWS Elastic Beanstalk
+117:AWS Elastic Beanstalk - Part 02
+
+Section 14:
+===========
+118:Shared Responsibility Model
+119:Client Security Responsibility Model
+120:AWS Trusted Advisor
+
+Section 15:
+===========
+121:Preparation guide for exam
+122:Important points for Exams - Part 02
+123:Important Points for Exams - Part 03
+
