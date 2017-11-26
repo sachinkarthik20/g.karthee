@@ -1,0 +1,41 @@
+#!/bin/bash
+instanceid=`curl http://169.254.169.254/2016-09-02/meta-data/instance-id`
+echo "=============Creating volume 1============="
+volumeId=`aws ec2 create-volume --size 5 --region ap-south-1 --availability-zone ap-south-1a --volume-type gp2 | jq '.VolumeId' | sed 's/"//g'`
+echo $volumeId
+sleep 10
+echo "=============Attaching volume 1============="
+aws ec2 attach-volume --volume-id $volumeId --instance-id $instanceid --device /dev/sdf
+echo "=============Creating volume 2============="
+volumeId2=`aws ec2 create-volume --size 8 --region ap-south-1 --availability-zone ap-south-1a --volume-type gp2 | jq '.VolumeId' | sed 's/"//g'`
+echo $volumeId2
+sleep 10
+echo "-----------attaching vol2----------------"
+aws ec2 attach-volume --volume-id $volumeId2 --instance-id $instanceid --device /dev/sdg
+sleep 9
+echo "=======creating physical volume============="
+pvcreate /dev/xvdf
+ls -ltr /dev/xvd*
+pvcreate /dev/xvdg
+pvscan
+pvdisplay
+echo "=====creating volume grp====="
+vgcreate vol_gp /dev/xvdf /dev/xvdg
+vgscan
+vgdisplay
+echo "=======displaying volume======="
+lvcreate -L 2G -n lv1 vol_gp
+lvscan
+ls -ltr /dev/vol_gp/lv1
+mkfs.ext4 /dev/vol_gp/lv1
+mkdir /os
+mount /dev/vol_gp/lv1 /os
+df -h
+echo "======9G======="
+lvcreate -L 9G -n lv2 vol_gp
+lvscan
+ls -ltr /dev/vol_gp/lv2
+mkfs.ext4 /dev/vol_gp/lv2
+mkdir /packages
+mount /dev/vol_gp/lv2 /packages
+df -h
